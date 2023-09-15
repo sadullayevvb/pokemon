@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="w-100 bg-dark">
+      <div class="container">
+        <input
+          class="js-input-search w-100 p-2 text-white bg-transparent outline-none border-none"
+          type="text"
+        />
+      </div>
+    </div>
+    <div class="container">
+      <ul
+        class="category-wrapper my-5 flex-wrap d-flex align-items-center gap-5"
+      ></ul>
+      <div class="wrapper"></div>
+    </div>
+
+    <template class="pokemons-template">
+      <div class="box">
+        <div class="container">
+          <img
+            src="http://www.serebii.net/pokemongo/pokemon/001.png"
+            class="pacemon__img"
+            alt=""
+          />
+          <div class="wrapp">
+            <p class="box__wrapp__text weight">0.7m</p>
+
+            <div class="box__wrapp__content">
+              <h3 class="box__wrapp__content__title">Bulbazavr</h3>
+              <p class="box__wrapp__content__text">Send pokemon</p>
+              <span class="box__wrapp__content__span">Normal</span>
+            </div>
+
+            <p class="box__wrapp__text height">6.9kg</p>
+          </div>
+          <div class="box__wrapper">
+            <p class="box__wrapper__text type-left">Chlorophyl</p>
+            <p class="box__wrapper__text type-right">Overgrov</p>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <template class="category-template">
+      <li data-id="ALL" class="category-item btn btn-primary">All</li>
+    </template>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
